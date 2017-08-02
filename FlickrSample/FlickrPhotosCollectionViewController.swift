@@ -152,7 +152,12 @@ extension FlickrPhotosViewController:UICollectionViewDelegateFlowLayout{
 extension FlickrPhotosViewController{
     override func collectionView(_ collectionView: UICollectionView,
                                  shouldSelectItemAt indexPath: IndexPath) -> Bool {
-        largePhotoIndexPath = indexPath as NSIndexPath
+        if largePhotoIndexPath == indexPath as NSIndexPath{
+            largePhotoIndexPath = nil
+        }
+        else{
+            largePhotoIndexPath = indexPath as NSIndexPath
+        }
         return false
     }
 }
