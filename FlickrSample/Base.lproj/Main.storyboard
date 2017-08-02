@@ -89,6 +89,11 @@
                                 <outlet property="delegate" destination="HRb-IS-FB9" id="q59-Iu-BYO"/>
                             </connections>
                         </textField>
+                        <barButtonItem key="rightBarButtonItem" title="Share" id="uyc-6x-iBK">
+                            <connections>
+                                <action selector="share:" destination="HRb-IS-FB9" id="IvB-wf-VD8"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DOe-Uu-Bgb" userLabel="First Responder" sceneMemberID="firstResponder"/>
