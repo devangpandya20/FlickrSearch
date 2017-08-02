@@ -232,7 +232,6 @@ extension FlickrPhotosViewController{
         guard sharing else {
             return
         }
-        
         let photo = photoForIndexPath(indexPath: indexPath)
         
         if let index = selectedPhotos.index(of:photo) {
